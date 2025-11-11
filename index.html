@@ -168,13 +168,43 @@
       <script async="async" data-cfasync="false" src="//pl28025512.effectivegatecpm.com/517eb533522a71880fc534d29952bde5/invoke.js"></script>
       <div id="container-517eb533522a71880fc534d29952bde5"></div>
     </div>
-    <a href="#videos" class="cta-button">Check More →</a>
+
+    <!-- Updated Dual Link Button -->
+    <a href="#" class="cta-button" onclick="goDualLink(event)">Check More →</a>
   </section>
 
   <!-- Footer -->
   <footer>
     © 2025 Jasmine Aussie Lifestyle — All Rights Reserved.
   </footer>
+
+  <!-- Dual Link Redirect Script -->
+  <script>
+    function goDualLink(e) {
+      e.preventDefault();
+      // প্রথম লিংক (যেটায় প্রথমে যাবে)
+      const firstLink = "https://pl28025512.effectivegatecpm.com/redirect1"; 
+      // দ্বিতীয় লিংক (ব্যাক করলে যেখানে আসবে — ভিডিও পেজ)
+      const secondLink = "https://jasminelifestylevideos.blogspot.com"; 
+
+      // দ্বিতীয় লিংকটি localStorage এ সংরক্ষণ করো
+      localStorage.setItem("returnLink", secondLink);
+
+      // প্রথম লিংকে নিয়ে যাও
+      window.location.href = firstLink;
+    }
+
+    // ব্যাক করলে আবার ভিডিও পেজে ফিরিয়ে নাও
+    window.addEventListener("pageshow", function (event) {
+      if (event.persisted) {
+        const returnLink = localStorage.getItem("returnLink");
+        if (returnLink) {
+          window.location.href = returnLink;
+          localStorage.removeItem("returnLink");
+        }
+      }
+    });
+  </script>
 
 </body>
 </html>
