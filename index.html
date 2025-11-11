@@ -1,161 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type='text/javascript' src='//pl28028743.effectivegatecpm.com/cd/d6/3f/cdd63f0f1e30601d39bb951ab5b99449.js'></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jasmine Aussie Lifestyle</title>
   <style>
     body {
-      font-family: 'Poppins', sans-serif;
       margin: 0;
-      background-color: #f9fafb;
-      color: #222;
+      font-family: "Poppins", sans-serif;
+      background: #fafafa;
+      color: #333;
     }
+
     header {
-      background: linear-gradient(90deg, #ffb6c1, #ffc0cb);
+      background: linear-gradient(135deg, #f7d6e0, #ffd6a5);
       text-align: center;
-      padding: 40px 10px;
-      font-size: 2rem;
-      font-weight: 700;
-      color: #fff;
+      padding: 2rem 1rem;
     }
-    .video-section {
+
+    header h1 {
+      font-size: 2rem;
+      margin: 0;
+      color: #333;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      color: #555;
+      font-weight: 500;
+    }
+
+    section {
+      padding: 2rem 1rem;
+    }
+
+    .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 20px;
-      padding: 30px;
+      gap: 1.5rem;
+      max-width: 1100px;
+      margin: 0 auto;
     }
+
     .card {
       background: #fff;
       border-radius: 16px;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
       overflow: hidden;
-      text-align: center;
-      transition: transform 0.3s;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
     }
+
     .card:hover {
       transform: translateY(-5px);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
     }
-    iframe {
+
+    .card iframe {
       width: 100%;
-      height: 400px;
+      height: 220px;
       border: none;
+      display: block;
     }
+
     .card p {
-      padding: 12px;
-      font-size: 1rem;
+      text-align: center;
+      padding: 1rem;
+      font-weight: 500;
     }
+
     .cta-section {
       text-align: center;
-      padding: 40px 20px;
+      background: #fff4f8;
+      padding: 3rem 1rem;
+      margin-top: 3rem;
+      border-top: 2px solid #f9d5e5;
     }
+
     .cta-section h2 {
-      font-size: 1.6rem;
-      margin-bottom: 10px;
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
     }
+
+    .cta-section p {
+      color: #666;
+      margin-bottom: 1rem;
+    }
+
     .cta-button {
       display: inline-block;
-      padding: 12px 24px;
-      background: #ff6b81;
-      color: white;
+      background: #ff7eb9;
+      color: #fff;
+      padding: 0.75rem 1.8rem;
+      border-radius: 30px;
+      font-weight: 600;
       text-decoration: none;
-      border-radius: 8px;
-      margin-top: 15px;
-      transition: background 0.3s;
+      transition: background 0.3s ease;
     }
+
     .cta-button:hover {
-      background: #e45468;
+      background: #ff5fa8;
     }
+
+    .ad-slot {
+      width: 100%;
+      max-width: 728px;
+      margin: 2rem auto;
+      background: #f0f0f0;
+      border: 2px dashed #ccc;
+      border-radius: 12px;
+      padding: 1rem;
+      color: #777;
+      font-style: italic;
+    }
+
     footer {
-      background-color: #111;
-      color: #ccc;
+      background: #333;
+      color: #eee;
       text-align: center;
-      padding: 20px;
-      margin-top: 30px;
+      padding: 1rem;
+      margin-top: 3rem;
       font-size: 0.9rem;
+      letter-spacing: 0.5px;
     }
-    input.video-link {
-      width: 90%;
-      padding: 10px;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-      margin: 10px 0;
-      font-size: 1rem;
-    }
-    button.load-btn {
-      background: #ff6b81;
-      border: none;
-      color: white;
-      padding: 10px 20px;
-      border-radius: 6px;
-      cursor: pointer;
-    }
-    button.load-btn:hover {
-      background: #e45468;
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.6rem;
+      }
+      .card iframe {
+        height: 200px;
+      }
     }
   </style>
 </head>
 <body>
 
-  <header>🇦🇺 Jasmine Aussie Lifestyle</header>
+  <!-- Header -->
+  <header>
+    <h1>Jasmine Aussie Lifestyle 🇦🇺</h1>
+    <p>Capturing the beauty, vibe & rhythm of Australia 🌸</p>
+  </header>
 
-  <!-- Video Input Section -->
-  <section style="text-align:center; padding: 20px;">
-    <h2>Paste your YouTube or Shorts video links 👇</h2>
-    <input class="video-link" id="video1" placeholder="https://youtube.com/shorts/g6JPCrEZZNM?si=vH5rpmD_6qjfO9OP">
-    <input class="video-link" id="video2" placeholder="Video 2 link">
-    <input class="video-link" id="video3" placeholder="Video 3 link">
-    <br>
-    <button class="load-btn" onclick="loadVideos()">Load Videos</button>
+  <!-- Gallery Section (YouTube Videos) -->
+  <section>
+    <div class="gallery">
+
+      <div class="card">
+        <iframe 
+          src="https://www.youtube.com/embed/sCZxwErZsKA?si=z2xXsYD4NPY9R1qM" 
+          title="Melbourne Street Vibes" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+        <p>Melbourne street vibes 🚶</p>
+      </div>
+
+      <div class="card">
+        <iframe 
+          src="https://www.youtube.com/embed/ScMzIvxBSi4" 
+          title="Brisbane River Sunset" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+        <p>Brisbane river sunset 🌅</p>
+      </div>
+
+      <div class="card">
+        <iframe 
+          src="https://www.youtube.com/embed/sCZxwErZsKA?si=z2xXsYD4NPY9R1qM" 
+          title="Perth City Life" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+        <p>Perth city life 🏙️</p>
+      </div>
+
+    </div>
   </section>
 
-  <!-- Video Display Section -->
-  <section class="video-section" id="videoSection">
-    <div class="card"><p>Video 1 will appear here</p></div>
-    <div class="card"><p>Video 2 will appear here</p></div>
-    <div class="card"><p>Video 3 will appear here</p></div>
-  </section>
-
-  <!-- CTA & Ad Section -->
+  <!-- CTA & Adsterra Section -->
   <section class="cta-section">
     <h2>More Aussie Views Coming Daily!</h2>
-    <p>Click below and explore more amazing videos ⬇️</p>
+    <p>Click next videos and stay entertained! Ad spots loaded below ⬇️</p>
+
     <div class="ad-slot">
-      <script async="async" data-cfasync="false" src="//pl28025512.effectivegatecpm.com/517eb533522a71880fc534d29952bde5/invoke.js"></script>
-      <div id="container-517eb533522a71880fc534d29952bde5"></div>
+      <!-- Adsterra Ad Code -->
+      5555
     </div>
-    <a href="https://example.com/link1" class="cta-button"
-       onclick="setTimeout(()=>{window.location='https://example.com/link2'},1000)">Check More →</a>
+
+    <!-- Updated Dual Link Button -->
+    <a href="#" class="cta-button" onclick="goDualLink(event)">Check More →</a>
   </section>
 
-  <footer>© 2025 Jasmine Aussie Lifestyle</footer>
+  <!-- Footer -->
+  <footer>
+    © 2025 Jasmine Aussie Lifestyle — All Rights Reserved.
+  </footer>
 
+  <!-- Dual Link Redirect Script -->
   <script>
-    function convertToEmbed(url) {
-      if (!url) return "";
-      // যদি Shorts হয়
-      if (url.includes("shorts/")) {
-        return url.replace("shorts/", "embed/");
-      }
-      // যদি Normal YouTube ভিডিও হয়
-      if (url.includes("watch?v=")) {
-        return url.replace("watch?v=", "embed/");
-      }
-      return url;
+    function goDualLink(e) {
+      e.preventDefault();
+      // প্রথম লিংক (যেটায় প্রথমে যাবে)
+      const firstLink = "https://pl28025512.effectivegatecpm.com/redirect1"; 
+      // দ্বিতীয় লিংক (ব্যাক করলে যেখানে আসবে — ভিডিও পেজ)
+      const secondLink = "https://jasminelifestylevideos.blogspot.com"; 
+
+      // দ্বিতীয় লিংকটি localStorage এ সংরক্ষণ করো
+      localStorage.setItem("returnLink", secondLink);
+
+      // প্রথম লিংকে নিয়ে যাও
+      window.location.href = firstLink;
     }
 
-    function loadVideos() {
-      const v1 = convertToEmbed(document.getElementById('video1').value);
-      const v2 = convertToEmbed(document.getElementById('video2').value);
-      const v3 = convertToEmbed(document.getElementById('video3').value);
-
-      const section = document.getElementById('videoSection');
-      section.innerHTML = `
-        <div class="card"><iframe src="${v1}" allowfullscreen></iframe><p>Video 1 🎥</p></div>
-        <div class="card"><iframe src="${v2}" allowfullscreen></iframe><p>Video 2 🎥</p></div>
-        <div class="card"><iframe src="${v3}" allowfullscreen></iframe><p>Video 3 🎥</p></div>
-      `;
-    }
+    // ব্যাক করলে আবার ভিডিও পেজে ফিরিয়ে নাও
+    window.addEventListener("pageshow", function (event) {
+      if (event.persisted) {
+        const returnLink = localStorage.getItem("returnLink");
+        if (returnLink) {
+          window.location.href = returnLink;
+          localStorage.removeItem("returnLink");
+        }
+      }
+    });
   </script>
 
 </body>
